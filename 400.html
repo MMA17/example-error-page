@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Error 400</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      position: relative;
+      width: 90vw;
+      height: 98vh;
+      margin: auto;
+    }
+    .main-content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      font-family: 'Roboto', sans-serif;
+    }
+    .frame-image {
+      position: absolute;
+      top: 25%;
+      left: 30%;
+    }
+    .title {
+      margin-bottom: 2px;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 33px;
+      color: #212121;
+    }
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      padding-left: 24px;
+    }
+    .status-code {
+      color: #757575;
+      font-size: 14px;
+      padding-bottom: 30px;
+    }
+    .document-link {
+      font-size: 16px;
+      color: #3F7EFE;
+      font-weight: 600;
+      padding-top: 10px;
+      letter-spacing: 0.01em;
+    }
+    .last-text {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    .phone-number {
+      color: #3F7EFE;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 1440px) {
+      .frame-image {
+        left: 23%;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      .frame-image {
+        left: 12%;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .frame-image {
+        left: 5%;
+        width: 60%;
+      }
+    }
+    @media screen and (max-width: 425px) {
+      .frame-image {
+        width: 70%;
+        left: -5%;
+        top: 35%;
+      }
+      .icon-image {
+        width: 32%;
+      }
+      .title {
+        font-size: 20px;
+      }
+      .status-code {
+        padding-bottom: 10px;
+      }
+      .document-link {
+        font-size: 14px;
+      }
+    }
+    @media screen and (max-width: 320px) {
+      .frame-image {
+        top: 37%;
+      }
+      .title {
+        font-size: 17px;
+      }
+      .document-link {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <image src="https://statistic-resource.hn.ss.bfcplatform.vn/sad-backgroud.svg" alt="frame" class="frame-image" /> 
+    <div class="main-content">
+      <image src="https://statistic-resource.hn.ss.bfcplatform.vn/cloud-sad.svg" alt="icon" class="icon-image" />
+      <div class="text-content">
+        <p class="title">Có gì đó không đúng !</p>
+        <span class="status-code">Status Code: 400</span>
+        <a href="https://docs.bizflycloud.vn/app_engine/" class="document-link" target="_blank">Tài liệu tham khảo</a>
+        <a href="https://manage.bizflycloud.vn/ticket/" class="document-link" target="_blank">Liên hệ hỗ trợ</a>
+      </div>
+    </div>
+    <p class="last-text">Hoặc hotline: <span class="phone-number">024 7302 8888</span> để được hỗ trợ 24/7</p>
+  </div>
+</body>
+</html>
